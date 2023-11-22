@@ -1,18 +1,26 @@
 //import HomePage from './pages/Homepage';
 import './App.css'
 //import ShopPage from './pages/ShopPage';
-import React from 'react';
-import ContactPage from './pages/ContactPage';
+import {Fragment} from 'react';
+//import ContactPage from './pages/ContactPage';
+//import AuthPage from "./pages/AuthPage";
+//import CartPage from "./pages/CartPage";
+// import BlogPage from "./pages/BlogPage";
+import BlogDetailsPage from "./pages/BlogDetails";
 function App() {
  
 
   return (
    <div>
-     <React.Fragment>
+     <Fragment>
         {/* <HomePage />  */}
       {/* <ShopPage /> */}
-      <ContactPage/>
-     </React.Fragment>
+      {/* <ContactPage/>
+      <AuthPage/> */}
+      {/* <CartPage /> */}
+        {/* <BlogPage /> */}
+        <BlogDetailsPage />
+     </Fragment>
    </div>
      
   );
