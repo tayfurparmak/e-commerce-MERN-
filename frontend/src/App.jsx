@@ -6,7 +6,8 @@ import {Fragment} from 'react';
 //import AuthPage from "./pages/AuthPage";
 //import CartPage from "./pages/CartPage";
 // import BlogPage from "./pages/BlogPage";
-import BlogDetailsPage from "./pages/BlogDetails";
+//import BlogDetailsPage from "./pages/BlogDetails";
+import ProductDetailsPage from "./pages/ProductDetailsPage";
 function App() {
  
 
@@ -19,7 +20,8 @@ function App() {
       <AuthPage/> */}
       {/* <CartPage /> */}
         {/* <BlogPage /> */}
-        <BlogDetailsPage />
+          {/* <BlogDetailsPage /> */}
+      <ProductDetailsPage />
      </Fragment>
    </div>
      
