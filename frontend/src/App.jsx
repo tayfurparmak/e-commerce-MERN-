@@ -1,7 +1,10 @@
-import Header from './components/header';
+import Header from './components/Layout/Header/header';
 import './App.css'
-import Footer from './components/footer';
-import Policy from './components/policy';
+import Footer from './components/Layout/Footer/footer';
+import Policy from './components/Layout/Policy/policy';
+import Sliders from './components/Slider/slider';
+import Categories from './components/Categories/categories';
+import Products from './components/Products/products';
 
 function App() {
  
@@ -9,7 +12,9 @@ function App() {
   return (
    <div>
     <Header/>
-      <h1>dasd</h1>
+      <Sliders/>
+      <Categories/>
+      <Products/>
       <Policy/>
       <Footer/>
    </div>
