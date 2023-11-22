@@ -1,6 +1,6 @@
 import React from "react";
 
-import Sliders from "../components/Slider/slider"; 
+import Sliders from "../components/Slider/Sliders"; 
 import Categories from "../components/Categories/categories";    
 import Products from "../components/Products/products";  
 import Campaigns from "../components/Campaigns/campaigns";   

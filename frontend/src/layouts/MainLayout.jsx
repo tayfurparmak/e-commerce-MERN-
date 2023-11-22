@@ -3,12 +3,22 @@ import Footer from "../components/Layout/Footer/footer";
 import Header from "../components/Layout/Header/header";
 import Proptypes from "prop-types";
 import Search from "../components/Modals/Search/Search";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Dialog from "../components/Modals/Dialog/Dialog";
 
     const MainLayout = ({ children }) => {
         const [isSearchShow, setIsSearchShow] = useState(false);
-        const [isDialogShow, setIsDialogShow] = useState(true);
+        const [isDialogShow, setIsDialogShow] = useState(false);
+
+        useEffect(() => {
+          const dialogStatus = localStorage.getItem("dialog")
+            ? JSON.parse(localStorage.getItem("dialog"))
+            : localStorage.setItem("dialog", JSON.stringify(true));
+      
+          setTimeout(() => {
+            setIsDialogShow(dialogStatus);
+          }, 2000);
+        }, []);
   return (
     <div className="main-layout">
            <Dialog isDialogShow={isDialogShow} setIsDialogShow={setIsDialogShow} />
