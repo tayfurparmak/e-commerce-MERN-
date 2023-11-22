@@ -1,22 +1,18 @@
-import Header from './components/Layout/Header/header';
+//import HomePage from './pages/Homepage';
 import './App.css'
-import Footer from './components/Layout/Footer/footer';
-import Policy from './components/Layout/Policy/policy';
-import Sliders from './components/Slider/slider';
-import Categories from './components/Categories/categories';
-import Products from './components/Products/products';
-
+//import ShopPage from './pages/ShopPage';
+import React from 'react';
+import ContactPage from './pages/ContactPage';
 function App() {
  
 
   return (
    <div>
-    <Header/>
-      <Sliders/>
-      <Categories/>
-      <Products/>
-      <Policy/>
-      <Footer/>
+     <React.Fragment>
+        {/* <HomePage />  */}
+      {/* <ShopPage /> */}
+      <ContactPage/>
+     </React.Fragment>
    </div>
      
   );
