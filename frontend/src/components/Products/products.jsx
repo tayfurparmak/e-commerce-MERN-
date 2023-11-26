@@ -4,7 +4,7 @@ import ProductItem from "./productItem";
 import "./Products.css";
 import Slider from "react-slick";
 import PropTypes from "prop-types";
-import ProductsData from "../../data.json";
+import productsData from "../../data.json";
 
 
 function NextBtn({ onClick }) {
@@ -31,7 +31,9 @@ PrevBtn.propTypes = {
   onClick: PropTypes.func,
 };
 const Products = () => {
-  const [products] = useState(ProductsData);
+  const [products] = useState(productsData);
+  const [cartItems, setCartItems] = useState([]);
+  console.log(cartItems.length);
 
   const sliderSettings = {
     dots: false,
@@ -59,6 +61,7 @@ const Products = () => {
   };
   return (
     <section className="products">
+      Cart Sayısı: {cartItems.length}
       <div className="container">
         <div className="section-title">
           <h2>Featured Products</h2>
@@ -67,7 +70,7 @@ const Products = () => {
         <div className="product-wrapper product-carousel">
         <Slider {...sliderSettings}>
             {products.map((product) => (
-              <ProductItem product={product} key={product.id} />
+            <ProductItem productItem={product} setCartItems={setCartItems} key={product.id} />
             ))}
           </Slider>
        

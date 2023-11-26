@@ -7,7 +7,7 @@ import {Fragment} from 'react';
 //import CartPage from "./pages/CartPage";
 // import BlogPage from "./pages/BlogPage";
 //import BlogDetailsPage from "./pages/BlogDetails";
-//import ProductDetailsPage from "./pages/ProductDetailsPage";
+// import ProductDetailsPage from "./pages/ProductDetailsPage";
 function App() {
  
 

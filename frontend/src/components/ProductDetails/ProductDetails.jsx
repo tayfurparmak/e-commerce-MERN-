@@ -3,6 +3,7 @@ import "./ProductDetails.css";
 import Tabs from "./Tabs/Tabs";
 import Info from "./Info/Info";
 import Gallery from "./Gallery/Gallery";
+import "../../../src/data.json"
 const ProductDetails = () => {
   return (
     <section className="single-product">
